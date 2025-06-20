@@ -1,0 +1,114 @@
+
+
+/* FONT AND COLORS */
+
+@font-face {
+    font-family: "Terminus";
+    src: url("Termius TTF Bold.ttf");
+    font-smooth: 0;
+}
+*{
+    font-family: "Terminus", monospace !important;
+    font-smooth: 0;
+}
+
+:root{
+    --black: #000;
+    --purple: #9663ff;
+    --purple-hover: #6342a5;
+}
+
+
+/* ELEMENTS */
+
+
+/* buttons and textboxes */
+
+.startmenu-category, .startmenu-app-tile, button, input[type=text], input[type=datetime-local], input[type=date], input[type=time], input[type=file], select{
+    background-color: var(--black);
+    box-shadow: none;
+    border: 3px solid var(--purple);
+    border-radius: 0;
+}
+.startmenu-category:hover, .startmenu-app-tile:hover, button:hover, input[type=text]:hover, input[type=datetime-local]:hover, input[type=date]:hover, input[type=time]:hover, input[type=file]:hover, select:hover{
+    background-color: var(--purple);
+}
+
+
+/* tables */
+
+table{
+    border: 2px solid var(--purple);
+    border-radius: 0;
+}
+td, th{
+    border: 2px solid var(--purple);
+}
+
+
+/* other */
+
+input[type=checkbox] {
+    filter: hue-rotate(50deg) opacity(0.9);
+}
+fieldset{
+    border: 3px solid var(--purple);
+    border-radius: 0;
+}
+
+
+/* DESKTOP */
+
+
+/* box style */
+
+#dock, #startmenu, .window, #loginbox{
+    background-color: var(--black);
+    box-shadow: none;
+    border: 3px solid var(--purple);
+    border-radius: 0;
+}
+
+
+/* topbar */
+
+#topbar:not(.topbar-transparent){
+    background-color: var(--black);
+    box-shadow: none;
+    border-bottom: 3px solid var(--purple);
+    height: 2.5em;
+}
+
+#searchbar{ transform: translateY(3px); }
+#timebar{ transform: translateY(1px); }
+
+
+/* dock */
+
+#start-button{ border: 3px solid var(--purple); }
+#start-button:hover{
+    background-color: var(--purple);
+    border: 3px solid var(--purple);
+    transform: none;
+}
+
+
+/* WINDOWS */
+
+.titlebar{
+    border-radius: 0;
+    background-color: var(--black);
+    border-bottom: 3px solid var(--purple);
+    color: var(--purple);
+}
+.titlebar-buttons > a{
+    background-color: var(--purple);
+    box-shadow: none;
+    border-radius: 0;
+    transform: scale(1.25);
+    margin-left: 0.5em;
+}
+.titlebar-buttons > a:hover{ background-color: var(--purple-hover); }
+
+
+.window-content{ border-top: 3px solid var(--purple); }
