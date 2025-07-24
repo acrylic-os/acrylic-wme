@@ -1,0 +1,11 @@
+{
+
+    "animation-delays": {
+        "window-open": 0,
+        "window-close": 0,
+        "window-change": 0,
+        "startmenu-open": 0,
+        "startmenu-close": 0
+    }
+    
+}
